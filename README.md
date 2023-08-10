@@ -8,6 +8,7 @@ Otros comandos
 2.- git tag v1.0                    -> se usa generalmente en rama master o main para crer versiones del proyecto
 
 
+
 Pasos para actualizar en github mi repositorio
 1.- git add .                       -> Se agregan todos los cambios y modificaciones que se hicieron al repositorio en una sola vez
 2.- git commit -m 'comentario para identificar ese cambio'
@@ -21,3 +22,27 @@ Para cambiarse de ramas
 3.- git add archivoASincronizar.formato    -> agrega para actualizar solo los cambios hechos en el archivo a sicronizar pero en la rama en la que te encuentres
 4.- git commit -m "mensaje"
 4.- git push origin ramaEnLaQueSeSincronizará  -> sincronizará los cambios en el archivo pero solo para la ramaEnLaQueSeSincronizará
+
+
+Para actualizar una rama con la información del repositorio remoto o en github
+1.- git stash clear
+2.- git stash                                -> actualiza los cambios el el repositorio remoto pero twmporalmente
+3.- git stash pop                            -> quita los cambios que se hicieron el repositorio remoto en mi 
+repositorio local
+
+
+Generar cambios en commits antes de publicarlos
+git commit - m "mensaje"                    ->primer comit hecho per que estuvo ma
+git commit --amend -m"new commit"           -> cambiaos el contenido del commit
+
+
+Revertir cambios, volver a un commit anterior
+git log --oneline       -> nos permite ver los commits que se han creado
+git revert  0dee494 <- numero del commit
+
+git reset --hard 0dee494   -> quita todos los commits previos al que se ponga en el comando
+
+
+
+ESTRUCTURA DE LOS COMMMITS
+![Alt text](image.png)
